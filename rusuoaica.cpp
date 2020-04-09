@@ -39,6 +39,8 @@ int main(int argc, char** argv) {
     int n, m, a; fin >> n >> m >> a;
     std::vector<Edge> edges;
 
+    edges.resize(3);
+
     for (int i = 0; i < m; i++) {
         int u, v, c; fin >> u >> v >> c;
         edges.emplace_back(u - 1, v - 1, c);
